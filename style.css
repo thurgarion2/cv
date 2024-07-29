@@ -1,0 +1,109 @@
+/*** General ***/
+:root {
+    --measure: 60ch;
+    --ratio: 1.25;
+    --s-1: calc(var(--s0) / var(--ratio));
+    --s0: 1rem;
+    --s1: calc(var(--s0) * var(--ratio));
+    --s2: calc(var(--s1) * var(--ratio));
+    --s3: calc(var(--s2) * var(--ratio));
+
+    --line-height: 1.5ch;
+    line-height: var(--line-height);
+
+    box-sizing: border-box;
+    font-family: "Overpass", "IBM Plex Sans", Arial, sans-serif;
+    font-variant-numeric: proportional-nums oldstyle-nums;
+    font-weight: 300;
+    font-size: var(--s0);
+}
+
+/*** measure ***/
+* {
+    max-inline-size: var(--measure);
+}
+
+html,
+div,
+header,
+nav,
+main,
+body,
+footer {
+    max-inline-size: none;
+}
+
+
+
+/*** section ***/
+
+/*** stack ***/
+
+.stack\:default {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.stack\:default>* {
+    margin-block: 0;
+}
+
+.stack\:default>*+* {
+    margin-block-start: calc(var(--line-height) / 2);
+}
+
+/*** box ***/
+
+.box\:section\:content{
+    padding-inline-start: var(--s0);
+}
+
+/*** utility ***/
+
+.section\:title {
+    padding-block-end: calc(var(--line-height) / 4);
+    margin-block-end: calc(var(--line-height) / 4);
+    border-block-end: 1px solid;
+    font-size: var(--s1);
+}
+
+.section\:title + * {
+    margin-block-start: 0;
+}
+
+/*** subsection ***/
+
+/*** stack ***/
+.stack\:small {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.stack\:small>* {
+    margin-block: 0;
+}
+
+.stack\:small>*+* {
+    margin-block-start: calc(var(--line-height) / 4);
+}
+
+/*** cluster ***/
+
+.cluster\:space-between {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--line-height);
+}
+
+/*** utility ***/
+
+.section\:subtitle {
+    font-weight: 600;
+   
+}
+
