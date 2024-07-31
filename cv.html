@@ -16,9 +16,14 @@
 
 <body>
     <header>
-        <h1>ERWAN SERANDOUR</h1>
-        <div>(+41) 78 401 12 85</div>
-        <div> <a itemprop="email" href="mailto:e.serandour@hispeed.ch">e.serandour@hispeed.ch</a> </div>
+        <div class="cluster:space-between">
+            <h1>ERWAN SERANDOUR</h1>
+
+            <div class="stack:small">
+                <div>(+41) 78 401 12 85</div>
+                <div> <a itemprop="email" href="mailto:e.serandour@hispeed.ch">e.serandour@hispeed.ch</a> </div>
+            </div>
+        </div>
     </header>
 
     <main>
@@ -28,11 +33,11 @@
                 <div class="section:title">EDUCATION</div>
 
                 <div class="stack:default box:section:content">
-                    <div class="stack:default">
+                    <div class="stack:medium-small">
 
                         <div class="stack:small">
                             <div class="cluster:space-between">
-                                <div class="section:subtitle">Msc. IN COMMUNICATION SYSTEMS</div>
+                                <div class="section:subtitle">Msc. IN COMMUNICATION SYSTEMS | <em>GPA 5.72 </em> </div>
                                 <div>2021 - 24</div>
                             </div>
 
@@ -44,7 +49,7 @@
 
                         <ul>
                             <li>
-                                MSE specializing in computer science. Coursework included : Database systems, Advanced
+                                Msc specializing in computer science. Coursework included : Database systems, Advanced
                                 Compiler
                                 Construction, Machine Learning.
                             </li>
@@ -52,11 +57,11 @@
 
                     </div>
 
-                    <div class="stack:default">
+                    <div class="stack:medium-small">
 
                         <div class="stack:small">
                             <div class="cluster:space-between">
-                                <div class="section:subtitle">Bsc . IN COMMUNICATION SYSTEMS</div>
+                                <div class="section:subtitle">Bsc . IN COMMUNICATION SYSTEMS | GPA : <em> 5.65 </em> </div>
                                 <div>2018 - 21</div>
                             </div>
 
@@ -67,9 +72,6 @@
                         </div>
 
                         <ul>
-                            <li>
-                                Established a solid understanding of fundamental math and computer science topics.
-                            </li>
                             <li>
                                 Coursework included : Java, Object Oriented Programming, C, Introduction to database
                                 systems.
@@ -85,7 +87,7 @@
             <div class="stack:default">
                 <div class="section:title">WORK EXPERIENCE</div>
                 <div class="stack:default box:section:content">
-                    <div class="stack:default">
+                    <div class="stack:medium-small">
 
                         <div class="stack:small">
                             <div class="cluster:space-between">
@@ -100,16 +102,15 @@
 
 
                         <p>
-                            Implemented new static analysis rules for Java, Kotlin and Spring Boot in sonarqube.
-                            Sonarqube
-                            is a
-                            leading code quality assessment tool. The work also involved updating the CI pipeline and
-                            answering
-                            support questions.
+                            JVM team member, participated in team sprint, helped answer 
+                            support questions and update the CI pipeline. Implemented about 
+                            10 new static analysis rules for Java, Kotlin and Spring Boot, 
+                            now available in SonarQube 10.4. 
+                            SonarQube is a leading tool for assessing code quality. 
                         </p>
                     </div>
 
-                    <div class="stack:default">
+                    <div class="stack:medium-small">
 
                         <div class="stack:small">
                             <div class="cluster:space-between">
@@ -124,14 +125,18 @@
                         <div class="stack:small">
                             <p>
                                 For the following classes:
+                            </p>
+
                             <ul>
                                 <li>Introduction to database systems</li>
                                 <li>Applied data analysis</li>
                                 <li>Advanced compiler construction</li>
                             </ul>
-                            Responsibilities included: presenting labs to students, correcting labs and exams, creating
-                            and
-                            maintaining grading infrastructures, overhauling labs, writing solution sheets.
+
+                            <p>
+                                Responsibilities included: helping groups of about 25 students solve exercises and 
+                                the course project, correcting assignments. 
+                                Average number of hours worked per week was about 4 hours.
                             </p>
                         </div>
 
@@ -144,7 +149,7 @@
                 <div class="section:title">PROJECTS</div>
 
                 <div class="stack:default box:section:content">
-                    <div class="stack:default">
+                    <div class="stack:medium-small">
 
                         <div class="stack:small">
                             <div class="cluster:space-between">
@@ -154,23 +159,32 @@
                             </div>
 
                             <div class="cluster:space-between">
-                                <div> <em>Master thesis done at System F, EPFL.</em> </div>
+                                <div> <em>Master thesis done at SYSTEMF, EPFL.</em> </div>
                             </div>
                         </div>
 
+                        <div class="stack:small">
+                            <p>
+                                Designed PrintWizard, a history debugger.
+                                PrintWizard records the complete history of a Java program and
+                                then lets you interactively explore what happened. It helps
+                                you debug problems that are difficult to solve with a standard
+                                debugger.
+                            </p>
 
-                        <p>
-                            Implemented PrintWizard, a new type of debugging tool. PrintWizard automatically records all
-                            expressions executed in a Java program and then lets you interactively explore the output.
-                            PrintWizard is
-                            implemented as a Java compiler plugin that instruments the program during compilation, and a
-                            web
-                            interface that displays the output.
-                        </p>
+                            <p>
+                                The project consists of two parts. A Java backend, a plugin for the Java compiler that
+                                modifies
+                                the program at compile time. Then, when executed, the program records its complete
+                                history in
+                                an event log. And a graphical user interface implemented in Javascript and HTML
+                                that allows interactive exploration of the program's history.
+                            </p>
+                        </div>
                     </div>
 
                     <div class="stack:default">
-                        <div class="stack:small">
+                        <div class="stack:medium-small">
                             <div class="cluster:space-between">
                                 <div class="section:subtitle">Query optimization for hybrid query execution</div>
                                 <div>Fall 2022</div>
@@ -183,11 +197,11 @@
 
 
                         <p>
-                            Implemented support for hybrid plans in the query planner of Proteus, a database engine
-                            developed at
-                            EPFL. Hybrid plans are plans that execute queries on the GPU and CPU simultaneously. The
-                            work
-                            involved developing a new algorithm and implementing it in the query planne
+                            Designed support for plans executed simultaneously on the GPU and CPU in the query planner
+                            of Proteus, a database engine
+                            developed at EPFL. The result was a 10% average query execution speed up.
+                            The work involved designing a new efficent algorithm to prallelize plan
+                            between the CPU and GPU and modifying the query planner implemented in Java.
                         </p>
                     </div>
                 </div>
