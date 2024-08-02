@@ -103,6 +103,79 @@ footer {
     margin-block-start: calc(var(--line-height) / 4);
 }
 
+/********
+**** cluster
+********/
+.cluster\:space-between {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--line-height);
+}
+
+/********
+**** cluster
+********/
+.cluster {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    gap: var(--line-height);
+}
+
+/********
+**** sidebar
+********/
+
+.with-sidebar\:photo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--line-height);
+}
+
+.with-sidebar\:photo > :first-child {
+    flex-basis: var(--image-size);
+    flex-grow: 1;
+}
+
+.with-sidebar\:photo > :last-child {
+    flex-basis: 0;
+    flex-grow: 999;
+    min-inline-size: 50%;
+}
+
+
+
+
+/*******************************************************
+**************** header ******************
+*******************************************************/
+
+/**************
+********* utility
+**************/
+
+.portrait {
+    --image-size: 6rem;
+    clip-path: circle(2.5rem at calc(var(--image-size) / 2 - 0.18rem) center);
+    width: var(--image-size);
+}
+
+.title {
+    margin: 0;
+}
+
+.info {
+    align-items: end;
+}
+
+.header {
+    margin-block-end:  calc(var(--line-height) / 2);
+}
+
 
 /*******************************************************
 **************** section ******************
@@ -143,21 +216,6 @@ footer {
 **************** subsection ******************
 *******************************************************/
 
-/**************
-********* layout
-**************/
-
-/********
-**** cluster
-********/
-.cluster\:space-between {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    gap: var(--line-height);
-}
 
 /**************
 ********* utility
